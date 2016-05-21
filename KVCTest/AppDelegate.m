@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DMStudent.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-                   
+    
+    DMStudent* student = [[DMStudent alloc]init];
+    student.name = @"Denis";
+    student.age = 28;
+    
+    NSLog(@"%@",student);
     
     
     return YES;
