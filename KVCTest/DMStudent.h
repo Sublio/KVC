@@ -11,6 +11,6 @@
 @interface DMStudent : NSObject
 
 @property (strong, nonatomic)NSString* name;
-@property (assign, nonatomic)NSInteger* age;
+@property (assign, nonatomic)NSInteger age;
 
 @end

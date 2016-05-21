@@ -26,6 +26,14 @@
     NSLog(@"%@",student);
     
     
+    [student setValue:@"Alex" forKey:@"name"];
+    [student setValue:@25 forKey:@"age"];
+    
+    NSLog(@"name1 = %@, name2 = %@", student.name, [student valueForKey:@"name"]);
+    
+    
+    //NSLog(@"%@",student);
+    
     return YES;
 }
 
