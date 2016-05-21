@@ -11,6 +11,9 @@
 
 @interface AppDelegate ()
 
+
+@property (strong,nonatomic) DMStudent* student;
+
 @end
 
 @implementation AppDelegate
@@ -20,6 +23,11 @@
     
     
     DMStudent* student = [[DMStudent alloc]init];
+    
+    
+    [student addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld   context:NULL];
+    
+    
     student.name = @"Denis";
     student.age = 28;
     
@@ -32,9 +40,36 @@
     NSLog(@"name1 = %@, name2 = %@", student.name, [student valueForKey:@"name"]);
     
     
-    //NSLog(@"%@",student);
+    NSLog(@"%@",student);
+    
+    
+    
+    [student changeName];
+    
+    
+    NSLog(@"%@",student);
+    
+    self.student = student;
+    
+    
     
     return YES;
+}
+
+-(void)dealloc{
+    
+    [self.student removeObserver:self forKeyPath:@"name"];
+}
+
+
+#pragma  mark - Observing
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    
+    
+    NSLog(@"\n observeValueForKeyPath: %@\nofObject: %@\nchange:%@",keyPath, object,change);
+    
+    id value = [change objectForKey:NSKeyValueChangeNewKey];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

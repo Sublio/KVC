@@ -13,4 +13,7 @@
 @property (strong, nonatomic)NSString* name;
 @property (assign, nonatomic)NSInteger age;
 
+
+-(void)changeName;
+
 @end

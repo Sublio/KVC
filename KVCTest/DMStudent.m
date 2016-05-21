@@ -55,4 +55,18 @@
     return nil;
     
 }
+/*- (void)willChangeValueForKey:(NSString *)key;
+- (void)didChangeValueForKey:(NSString *)k
+*/
+
+
+-(void)changeName{
+    
+    
+    [self willChangeValueForKey:@"name"];
+    _name = @"FakeName";
+    [self didChangeValueForKey:@"name"];
+    
+}
+
 @end
