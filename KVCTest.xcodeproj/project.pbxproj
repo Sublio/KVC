@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D8AB73D1CF09FC1001C90DD /* DMStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8AB73C1CF09FC1001C90DD /* DMStudent.m */; };
 		8D8AB73F1CF0A462001C90DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8AB73E1CF0A462001C90DD /* Main.storyboard */; };
+		8DAEBA191CF204B300E8EF4D /* DMGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEBA181CF204B300E8EF4D /* DMGroup.m */; };
 		8DD6311E1CE62C1F00452AC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6311D1CE62C1F00452AC1 /* main.m */; };
 		8DD631211CE62C1F00452AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD631201CE62C1F00452AC1 /* AppDelegate.m */; };
 		8DD631291CE62C2000452AC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD631281CE62C2000452AC1 /* Images.xcassets */; };
@@ -30,6 +31,8 @@
 		8D8AB73B1CF09FC1001C90DD /* DMStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStudent.h; sourceTree = "<group>"; };
 		8D8AB73C1CF09FC1001C90DD /* DMStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStudent.m; sourceTree = "<group>"; };
 		8D8AB73E1CF0A462001C90DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8DAEBA171CF204B300E8EF4D /* DMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGroup.h; sourceTree = "<group>"; };
+		8DAEBA181CF204B300E8EF4D /* DMGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGroup.m; sourceTree = "<group>"; };
 		8DD631181CE62C1F00452AC1 /* KVCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD6311C1CE62C1F00452AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD6311D1CE62C1F00452AC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				8DD631201CE62C1F00452AC1 /* AppDelegate.m */,
 				8D8AB73B1CF09FC1001C90DD /* DMStudent.h */,
 				8D8AB73C1CF09FC1001C90DD /* DMStudent.m */,
+				8DAEBA171CF204B300E8EF4D /* DMGroup.h */,
+				8DAEBA181CF204B300E8EF4D /* DMGroup.m */,
 				8DD631281CE62C2000452AC1 /* Images.xcassets */,
 				8DD6312A1CE62C2000452AC1 /* LaunchScreen.xib */,
 				8DD6311B1CE62C1F00452AC1 /* Supporting Files */,
@@ -221,6 +226,7 @@
 			files = (
 				8DD631211CE62C1F00452AC1 /* AppDelegate.m in Sources */,
 				8D8AB73D1CF09FC1001C90DD /* DMStudent.m in Sources */,
+				8DAEBA191CF204B300E8EF4D /* DMGroup.m in Sources */,
 				8DD6311E1CE62C1F00452AC1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
